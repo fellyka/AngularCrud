@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-create-employee',
@@ -7,5 +8,10 @@ import { Component } from '@angular/core';
   styleUrl: './create-employee.component.css'
 })
 export class CreateEmployeeComponent {
+ fullName !: string;
+ email !: string;
 
+ saveEmployee(empForm:NgForm): void {
+  console.log(empForm.value);
+ }
 }
