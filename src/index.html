@@ -3,7 +3,12 @@
 <head>
   <meta charset="utf-8">
   <title>AngularCRUD</title>
-  <base href="/">
+  <!-- In our Local Developer Machine, we usually set the <base href="/">, but in the production server,
+  we may need to set the <base href="/sollers">, where sollers is the name of the folder where we are going to deploy
+   our application. The url will be like http://localhost:/sollers/list or http://localhost/sollers/create, etc.
+   We may need to run our application as follows: ng serve -o --base-href /sollers/
+    -->
+  <base href="/sollers">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
