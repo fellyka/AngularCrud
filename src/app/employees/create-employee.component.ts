@@ -10,6 +10,9 @@ import { NgForm } from '@angular/forms';
 export class CreateEmployeeComponent {
  fullName !: string;
  email !: string;
+ gender!: string;
+ phoneNumber!: string;
+ contactPreference!: string;
 
  saveEmployee(empForm:NgForm): void {
   console.log(empForm.value);
