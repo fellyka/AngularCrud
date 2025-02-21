@@ -13,6 +13,7 @@ export class CreateEmployeeComponent {
  phoneNumber!: string;
  gender: string = 'male'; // Default value for gender
  contactPreference: string = 'email'; // Default value for contact
+ isActive!: boolean;
 
  saveEmployee(empForm:NgForm): void {
   console.log(empForm.value);
